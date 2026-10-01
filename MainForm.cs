@@ -44,7 +44,7 @@ public partial class FrmMain : Form
         => lblText.Text = lblText.Text.ToUpper();
 
     private void BtnDelete_Click(object? sender, EventArgs e)
-        => lblText.Text = lblText.Text[..(lblText.Text.Length-1)];
+        => lblText.Text = lblText.Text[..^1];
 
     private void BtnMiddleRight_Click(object? sender, EventArgs e)
         => lblText.TextAlign = ContentAlignment.MiddleRight;
